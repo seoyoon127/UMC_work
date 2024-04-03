@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UMC1주차실습</title>
+    </head>
+    <body> 
+        <h2 id="number">0</h1>
+        <input type="button" id="increase" value="+1">
+        <input type="button" id="decrease" value="-1">
+    </body>
+    <script>
+        //DOM 선택하기
+        const num=document.getElementById("number");
+        const increase=document.getElementById("increase");
+        const drecease=document.getElementById("decrease");
+        let firstNum=0;
+        //버튼 클릭 이벤트 설정
+        increase.onclick=function(){
+            firstNum+=1;
+            num.innerHTML=firstNum;
+        }
+        drecease.onclick=function(){
+            firstNum-=1;
+            num.innerHTML=firstNum;
+        }
+    </script>
+</html>
