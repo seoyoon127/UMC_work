@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TodoList</title>
+        <style>
+            *{background-color: rgb(194, 208, 234);}
+            .container{
+                position: absolute;
+                left:30%;
+                top:10%;
+                text-align: center;
+            }
+            #input_box{
+                width:600px; height:50px;
+                color:grey; border-color: black; background-color: white;
+            }
+            .table{
+                font-weight: 800; font-size: 20px;
+            }
+            #todo,#todoList{margin-left: 100px;}
+            #done,#doneList{margin-left: 200px;}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>UMC Study Plan</h1>
+            <br><hr><br>
+            <input type="text" value="스터디 계획을 작성해 보세요!" id="input_box">
+            <table class="table">
+                <tr>   
+                    <td><div id="todo">해야할 일<hr></div></td>
+                    <td><div id="done">해낸 일<hr></div></td>
+                </tr>
+                <tr>
+                    <td><div id="todoList"></div></td>
+                    <td><div id="doneList"></div></td>
+                </tr>
+            </table>
+        </div>
+        <script src="C:\UMC\1주차\1주차_도전(2)\1주차_도전(2).js"></script>
+    </body>
+</html>
