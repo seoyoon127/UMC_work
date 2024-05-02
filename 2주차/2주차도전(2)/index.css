@@ -1,0 +1,44 @@
+*{
+  background-color: darkblue;
+}
+.app_container{  /*inline-flex로 하면 이미지 크기 고정->화면 가로길이 길어짐 */
+  display: flex; /*flex로 하면 무조건 1줄-> 이미지 크기 작아짐*/
+  flex-wrap:wrap; /*flex-wrap:요소들의 너비가 부모 너비보다 클 때 nowrap-그냥 한줄(의미없음) , wrap-여러 줄, */       
+}
+.movie_container{
+  width:250px;
+  margin:10px;
+  position: relative;
+}
+.movie_container img{
+  max-width: 100%;
+}
+.movie_container>div.overveiw>div{
+  display: none;
+}
+.movie_container:hover >div.overveiw>div{ /*movie_container가 호버됐을 때 overveiw만*/
+  display: block;
+  position:absolute;
+  top:0px;
+  background-color: rgba(0,0,0,0.8);
+  height: 450px; width: 250px;
+  color:white;
+}
+
+.info_box{
+  display: flex;
+  flex-wrap:nowrap;
+  width:100%; height:70px;
+  background-color: rgb(44, 44, 181);
+  border-radius: 0 0 10px 10px;
+}
+
+.info_box>*{
+  background-color: rgb(44, 44, 181);
+  line-height: 70px;
+  color:white;
+}
+
+.info_box .vote_avg{
+  margin-left:auto; 
+}
